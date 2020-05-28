@@ -18,7 +18,7 @@ class CashRegister
   
   def apply_discount
     if discount !=0
-      self.total = total * ((100.0 - discount.to.f)/100)
+      self.total = total * ((100.0 - discount.to.f)/100).to.i
   end
   
   def void_last_transaction
